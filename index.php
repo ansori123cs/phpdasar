@@ -56,6 +56,7 @@ if(isset($_POST["cari"])){
   <header>
     <nav class="nav justify-content-end ">
       <a class="nav-link" href="#"id="home">Home</a>
+      <a class="nav-link" href="registrasi.php"id="home">daftar admin</a>
       <a class="nav-link" href="#">olah data</a>
       <a class="nav-link" href="logout.php">LogOut</a>
       

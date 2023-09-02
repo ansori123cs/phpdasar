@@ -76,7 +76,7 @@ if(isset($_POST["cari"])){
     <img src="img/load.gif" alt="" class="loader">
   </div>
 </form>
-<a href="tambah.php">Tambahkan Data Mahasiswa</a> | <a name="" id="" class="btn btn-primary" href="#" role="button">Print</a>
+<a href="tambah.php" class="btn btn-primary">Tambahkan Data Mahasiswa</a> | <a name="" id="" class="btn btn-primary" href="#" role="button">Print</a>
 <div class="table-responsive" id="container">
     <table class="table table-primary p-2 b-2">
         <thead>
@@ -95,7 +95,9 @@ if(isset($_POST["cari"])){
             <?php foreach($mahasiswa as $row):?>
             <tr class="">
                <td scope="col"><?= $i;?></td>
-                <td scope="col"><a href="ubah.php?id=<?= $row["id"];?>"">ubah</a> <a href="hapus.php?id=<?= $row["id"];?>"onclick="return confirm('yakin menghapus data');">hapus</a></td>
+                <td scope="col"><a class="btn btn-primary" href="ubah.php?id=<?= $row["id"];?>"">ubah</a>
+                  <a class="btn btn-primary" href="hapus.php?id=<?= $row["id"];?>"onclick="return confirm('yakin menghapus data');">hapus</a>
+                </td>
                 <td scope="col"><img src="img/<?= $row["gambar"];?>" alt="" width="60px"></td>
                 <td scope="col"><?= $row["npm"];?></td>
                 <td scope="col"><?= $row["nama"];?></td>
